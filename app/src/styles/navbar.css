@@ -1,0 +1,101 @@
+/*
+ * Copyright (c) 2022 MineEjo.
+ * This file is part of Cinit-Bot-Creator <https://github.com/MineEjo/Cinit-Bot-Creator>.
+ *
+ * Cinit-Bot-Creator is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Cinit-Bot-Creator is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with  Cinit-Bot-Creator.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#navbar {
+	position: absolute;
+	top: var(--margin-default);
+	right: var(--margin-default);
+	bottom: 0;
+	left: var(--margin-default);
+	width: auto;
+	height: var(--height-header);
+	max-height: var(--height-header);
+	padding: var(--margin-elements);
+	-webkit-user-select: none;
+	transition: var(--transition-long);
+	border-radius: var(--border-radius-default);
+	background: var(--color-light);
+	}
+
+#navbar .tabs {
+	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	float: left;
+	transition: var(--transition-default);
+	}
+
+#navbar .tabs a {
+	float: left;
+	margin-left: var(--margin-elements);
+	padding: 0 var(--margin-elements);
+	cursor: pointer;
+	transition: var(--transition-default);
+	text-decoration: none;
+	opacity: 0.8;
+	color: var(--color-text-secondaty);
+	border-radius: var(--border-radius-default);
+	background: var(--color-light);
+	-webkit-user-drag: none;
+	}
+
+#navbar .tabs a:first-child {
+	margin-left: 0;
+	}
+
+#navbar .tabs a:hover {
+	background: var(--color-active);
+	}
+
+#navbar .tabs .active {
+	transition: var(--transition-default);
+	opacity: 1;
+	color: var(--color-text);
+	background: var(--color-main);
+	}
+
+#navbar .logo {
+	font-size: var(--font-size-default);
+	position: absolute;
+	z-index: 0;
+	top: var(--margin-elements);
+	right: 0;
+	bottom: var(--margin-elements);
+	left: 0;
+	text-align: center;
+	border-radius: var(--border-radius-default);
+	}
+
+#navbar .logo .content {
+	display: inline-block;
+	}
+
+#navbar .content svg {
+	float: left;
+	width: var(--width-default);
+	height: calc(var(--height-default) - var(--margin-elements));
+	margin: calc(var(--margin-elements) / 2) var(--margin-elements);
+	fill: var(--color-text);
+	}
+
+#navbar .content span {
+	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
+	float: left;
+	padding-right: var(--margin-elements);
+	}
