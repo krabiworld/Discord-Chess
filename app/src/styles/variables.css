@@ -1,0 +1,8 @@
+:root {
+	--color-main: #ef233c;
+	--color-optinal: #2b2d42;
+
+	/* Transitions */
+	--transition-default: all 0.1s linear;
+	--transition-menu: 0.5s ease;
+	}

@@ -1,0 +1,26 @@
+{
+	"name": "discord-chess",
+	"version": "0.0.1",
+	"description": "International Discord Chess Community",
+	"main": "app/express/main.js",
+	"scripts": {
+		"test": "node app/express/main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MineEjo/Discord-Chess.git"
+	},
+	"keywords": [
+		"!TODO"
+	],
+	"author": "!TODO",
+	"license": "!TODO",
+	"bugs": {
+		"url": "https://github.com/MineEjo/Discord-Chess/issues"
+	},
+	"homepage": "https://github.com/MineEjo/Discord-Chess#readme",
+	"dependencies": {
+		"express": "^4.18.1",
+		"path": "^0.12.7"
+	}
+}
