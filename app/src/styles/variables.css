@@ -1,8 +1,37 @@
 :root {
-	--color-main: #ef233c;
-	--color-optinal: #2b2d42;
+	/* Colors */
+	--color-text: #FFFFFF;
+	--color-text-secondaty: #F6F6F6;
+	--color-main: #7289DA;
+	--color-active: #414649;
+	--color-light: #33383b;
+	--color-embed: #23272A;
+
+	/* Margins */
+	--margin-default: 6px;
+	--margin-elements: 6px;
+
+	/* Borders */
+	--border-radius-default: 8px;
+
+	/* Width */
+	--width-default: 29px;
+	--width-min-display: 320px;
+
+	/* Height */
+	--height-default: 29px;
+	--height-header: calc(var(--height-default) + var(--margin-elements) * 2);
+
+	/* Opacity */
+	--opacity-default: 1;
+	--opacity-special: 0.8;
+	--opacity-secondary: 0.7;
+	--transparent: 0;
+
+	/* Fonts */
+	--font-size-default: 16px;
 
 	/* Transitions */
 	--transition-default: all 0.1s linear;
-	--transition-menu: 0.5s ease;
+	--transition-long: 0.5s ease;
 	}
