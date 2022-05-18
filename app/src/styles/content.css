@@ -1,4 +1,4 @@
-.content {
+#content {
 	position: absolute;
 	top: calc(var(--height-header) + var(--margin-default) * 2);
 	right: var(--margin-default);
