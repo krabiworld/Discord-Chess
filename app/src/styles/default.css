@@ -25,3 +25,7 @@ body {
 	color: var(--color-text);
 	background: var(--color-embed);
 	}
+
+#redirect {
+	display: none;
+	}
