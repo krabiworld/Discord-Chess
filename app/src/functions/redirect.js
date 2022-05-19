@@ -1,4 +1,4 @@
-if (jLinks) {
+if (LINKS) {
 	const sRedirect = document.getElementById('redirect-path').innerHTML;
-	if (sRedirect) window.location.href = jLinks[sRedirect];
+	if (sRedirect) window.location.href = LINKS[sRedirect];
 }

@@ -1,5 +1,5 @@
-const jLinks = {
-	donate: 'https://nowpayments.io/donation/chesscord',
-	github: 'https://github.com/MineEjo/Discord-Chess',
-	discord: 'https://discord.gg/ZHpdPgBb54'
+const LINKS = {
+	DONATE: 'https://nowpayments.io/donation/chesscord',
+	GITHUB: 'https://github.com/MineEjo/Discord-Chess',
+	DISCORD: 'https://discord.gg/ZHpdPgBb54'
 }
