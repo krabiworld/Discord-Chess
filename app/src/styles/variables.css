@@ -20,7 +20,7 @@
 
 	/* Height */
 	--height-default: 29px;
-	--height-header: calc(var(--height-default) + var(--margin-elements) * 2);
+	--height-navbar: calc(var(--height-default) + var(--margin-elements) * 2);
 
 	/* Opacity */
 	--opacity-default: 1;

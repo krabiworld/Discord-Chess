@@ -23,8 +23,8 @@
 	bottom: 0;
 	left: var(--margin-default);
 	width: auto;
-	height: var(--height-header);
-	max-height: var(--height-header);
+	height: var(--height-navbar);
+	max-height: var(--height-navbar);
 	padding: var(--margin-elements);
 	-webkit-user-select: none;
 	transition: var(--transition-long);
@@ -33,7 +33,7 @@
 	}
 
 #navbar .tabs {
-	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
+	line-height: calc(var(--height-navbar) - var(--margin-elements) * 2);
 	position: relative;
 	z-index: 1;
 	display: inline-flex;
@@ -95,7 +95,7 @@
 	}
 
 #navbar .content span {
-	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
+	line-height: calc(var(--height-navbar) - var(--margin-elements) * 2);
 	float: left;
 	padding-right: var(--margin-elements);
 	}
