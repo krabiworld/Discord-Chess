@@ -38,24 +38,6 @@
 	border-radius: var(--border-radius-default);
 	}
 
-#footer .lang select {
-	width: var(--width-input);
-	border: 0;
-	border-radius: var(--border-radius-default);
-	height: var(--height-default);
-	background: var(--color-active);
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-	padding: var(--margin-elements);
-	color: var(--color-text);
-	font-family: 'Roboto', sans-serif;
-	}
-
-#footer .lang select:focus{
-	outline: none;
-	}
-
 #footer .interaction {
 	margin-top: var(--margin-elements);
 	float: left;

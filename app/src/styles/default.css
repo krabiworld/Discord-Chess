@@ -55,4 +55,21 @@ body {
 	display: none;
 	}
 
-/* !TODO: Move the styling of standard elements to default */
+select {
+	cursor: pointer;
+	width: var(--width-input);
+	border: 0;
+	border-radius: var(--border-radius-default);
+	height: var(--height-default);
+	background: var(--color-active);
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	padding: var(--margin-elements);
+	color: var(--color-text);
+	font-family: 'Roboto', sans-serif;
+	}
+
+select:focus{
+	outline: none;
+	}
