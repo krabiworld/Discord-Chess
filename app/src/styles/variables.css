@@ -19,12 +19,14 @@
 
 	/* Width */
 	--width-default: 34px;
+	--width-input: 200px;
 	--width-min-display: 320px;
 	--width-menu-left: 190px;
 
 	/* Height */
 	--height-default: 34px;
 	--height-navbar: calc(var(--height-default) + var(--margin-elements) * 2);
+	--height-footer: calc(var(--height-default) + var(--margin-elements) * 2);
 
 	/* Opacity */
 	--opacity-default: 1;
