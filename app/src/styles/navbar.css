@@ -17,11 +17,10 @@
  */
 
 #navbar {
-	position: absolute;
-	top: var(--margin-default);
-	right: var(--margin-default);
-	bottom: 0;
-	left: var(--margin-default);
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
 	width: auto;
 	height: var(--height-navbar);
 	max-height: var(--height-navbar);
@@ -59,7 +58,7 @@
 	transition: var(--transition-default);
 	text-decoration: none;
 	opacity: 0.8;
-	color: var(--color-text-secondaty);
+	color: var(--color-text-secondary);
 	border-radius: var(--border-radius-default);
 	background: var(--color-light);
 	-webkit-user-drag: none;

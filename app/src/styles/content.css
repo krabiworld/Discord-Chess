@@ -1,8 +1,10 @@
 #content {
-	position: absolute;
-	top: calc(var(--height-navbar) + var(--margin-default) * 2);
-	right: var(--margin-default);
-	left: var(--margin-default);
+	position: relative;
+	top: var(--margin-default);
+	right: 0;
+	left: 0;
+	height: calc(100% - var(--height-navbar) - var(--margin-default));
+	bottom: 0;
 	padding: var(--border-radius-default);
 	border-radius: var(--border-radius-default);
 	background: var(--color-purple-gradient);
@@ -77,7 +79,7 @@
 	}
 
 #environment svg {
-	fill: var(--color-text-secondaty);
+	fill: var(--color-text-secondary);
 	}
 
 #env-chess svg {
@@ -103,5 +105,4 @@
 	right: 0;
 	bottom: 0;
 	-webkit-user-select: none;
-	box-shadow: var(--shadow-default);
 	}
