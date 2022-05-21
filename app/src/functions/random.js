@@ -1,4 +1,4 @@
-const aTimeRange = [1000, 3000]
+const aTimeRange = [1000, 3000];
 const sClassVisible = 'visible';
 
 window.addEventListener('load', () => {

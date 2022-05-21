@@ -1,6 +1,6 @@
 const sLocaleAttribute = 'localize';
 const sLangCookieKey = 'lang';
-const sClassLoaded = 'loaded'
+const sClassLoaded = 'loaded';
 
 window.addEventListener('load', () => {
 	/* Writing a domain into the copyright */
@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
 	
 	/* Removing the overlay */
 	const _hOverlay = document.getElementById('overlay');
-	if (!_hOverlay.classList.contains(sClassLoaded)) _hOverlay.classList.add(sClassLoaded)
+	if (!_hOverlay.classList.contains(sClassLoaded)) _hOverlay.classList.add(sClassLoaded);
 	document.body.classList.add(sClassLoaded);
 });
 
