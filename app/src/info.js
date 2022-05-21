@@ -12,7 +12,7 @@ const LANGUAGES = [
 	/* The first basic */
 	/* English */
 	[
-		'English', 'en-US', {
+		'English', 'en', {
 		name: 'Discord Chess',
 		home: 'Home',
 		donate: 'Donate',
@@ -38,7 +38,7 @@ const LANGUAGES = [
 	/* The rest are secondary */
 	/* Finnish */
 	[
-		'Suomi', 'fi-FI', {
+		'Suomi', 'fi', {
 		home: 'Etusivu',
 		donate: 'Lahjoita',
 		sourceCode: 'Lähdekoodi',
@@ -56,7 +56,7 @@ const LANGUAGES = [
 	],
 	/* Russian */
 	[
-		'Русский', 'ru-RU', {
+		'Русский', 'ru', {
 		home: 'Основная',
 		donate: 'Поддержка',
 		sourceCode: 'Исходный код',
@@ -74,7 +74,7 @@ const LANGUAGES = [
 	],
 	/* Ukraine */
 	[
-		'Українська', 'uk-UA', {
+		'Українська', 'uk', {
 		home: 'Основний',
 		donate: 'Підтримка',
 		sourceCode: 'Вихідний код',

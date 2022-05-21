@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
 					_bInputBlocked = true;
 				}
 				/* The user language is preferred if it is available in translation */
-				else if (!_bInputBlocked && navigator.language === LANGUAGES[_nIndex][1]) {
+				else if (!_bInputBlocked && navigator.language && navigator.language.slice(0, 2) === LANGUAGES[_nIndex][1]) {
 					_hOption.selected = true;
 				}
 				/* The first language is selected by default */
