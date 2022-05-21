@@ -13,7 +13,8 @@
 ### Localization `How to localize?`
 
 ```html
-<span localize='key'></span><!-- key - is JSON key from info.js file -->
+<span localize='key'></span> <!-- key - is JSON key from info.js file -->
+<span translation='false' localize='key'></span> <!-- Take the translation from the default language, ignoring the others (useful for names) -->
 ```
 
 ### Random `How to add?`
