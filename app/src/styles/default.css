@@ -62,7 +62,7 @@ body:is(.loaded) {
 select {
 	font-family: 'Roboto', sans-serif;
 	width: var(--width-input);
-	height: var(--height-default);
+	height: calc(var(--height-default) + var(--margin-elements) / 2);
 	padding: var(--margin-elements);
 	cursor: pointer;
 	color: var(--color-text);
