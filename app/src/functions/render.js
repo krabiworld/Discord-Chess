@@ -3,14 +3,14 @@ const sLangCookieKey = 'lang';
 
 window.addEventListener('load', () => {
 	/* Writing a domain into the copyright */
-	const hDomain = document.getElementById('domain');
-	if (hDomain) hDomain.innerHTML = window.location.hostname;
+	const _hDomain = document.getElementById('domain');
+	if (_hDomain) _hDomain.innerHTML = window.location.hostname;
 	
 	/* Loading available languages */
-	const hLang = document.getElementById('language');
-	if (hLang && LANGUAGES) {
+	const _hLang = document.getElementById('language');
+	if (_hLang && LANGUAGES) {
 		/*  Writing the selected language in cookies */
-		hLang.addEventListener('change', (_event) => {
+		_hLang.addEventListener('change', (_event) => {
 			document.cookie = `${sLangCookieKey}=${_event?.target?.value};`;
 			localise(_event?.target?.value);
 		});
@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
 			
 			/* Checking for correctness */
 			if (LANGUAGES[_nIndex][0] && LANGUAGES[_nIndex][1] && LANGUAGES[_nIndex][2]) {
-				hLang.appendChild(_hOption);
+				_hLang.appendChild(_hOption);
 				
 				/* Getting a cookie */
 				const _aCookie = document.cookie.replace(/ /g, '').split(';') || undefined;
@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
 			}
 		}
 		
-		if (hLang.value) localise(hLang.value);
+		if (_hLang.value) localise(_hLang.value);
 	}
 });
 
