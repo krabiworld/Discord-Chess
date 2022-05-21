@@ -80,7 +80,7 @@
 
 @keyframes moving {
 	0% {
-		right: calc(var(--width-menu-left) - var(--margin-elements) * 2.5);
+		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
 		width: var(--width-default);
 		height: var(--height-default);
 		}
@@ -90,7 +90,7 @@
 		height: calc(var(--height-default) * 1.2);
 		}
 	100% {
-		right: calc(var(--width-menu-left) - var(--margin-elements) * 2.5);
+		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
 		width: var(--width-default);
 		height: var(--height-default);
 		}
@@ -99,8 +99,7 @@
 #env-chess svg:nth-of-type(1) {
 	position: absolute;
 	z-index: 1;
-	right: calc(var(--width-menu-left) - var(--margin-elements) * 2.5);
-	bottom: calc(var(--margin-elements) * 2 + var(--height-default) / 2);
+	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
 	width: var(--width-default);
 	height: var(--height-default);
 	animation: moving 5s infinite;
@@ -110,8 +109,8 @@
 #env-chess svg:nth-of-type(2) {
 	position: absolute;
 	z-index: 1;
-	right: calc(var(--margin-elements) * 3);
-	bottom: calc(var(--margin-elements) * 2 + var(--height-default) / 2);
+	right: calc(var(--margin-elements) * 2);
+	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
 	width: var(--width-default);
 	height: var(--height-default);
 	fill: var(--color-text);
@@ -121,8 +120,8 @@
 	line-height: var(--height-default);
 	position: absolute;
 	z-index: 1;
-	right: calc(var(--margin-elements) * 22);
-	bottom: calc(var(--margin-elements) * 5);
+	right: calc(var(--margin-elements) * 21);
+	bottom: calc(var(--margin-elements) * 4);
 	height: var(--height-default);
 	padding: 0 var(--margin-elements);
 	transition: var(--transition-default);
@@ -134,14 +133,14 @@
 	}
 
 #figures-moves-random:is(.visible) {
-	opacity: var(--opacity-secondary);
+	opacity: var(--opacity-light);
 	}
 
 #chess-board {
 	position: absolute;
 	z-index: 1;
-	right: calc(var(--margin-elements) * 2);
-	bottom: calc(var(--margin-elements) * 2);
+	right: var(--margin-elements);
+	bottom: var(--margin-elements);
 	width: var(--width-menu-left);
 	height: calc(var(--height-default) / 2);
 	opacity: 1;
@@ -161,5 +160,100 @@
 	height: calc(100% + var(--height-default) * 4);
 	-webkit-user-select: none;
 	transform: translate3d(-20px, -96px, 0);
-	opacity: 0.7;
+	opacity: var(--opacity-special);
+	}
+
+#authors {
+	float: left;
+	display: inline-table;
+	top: calc(var(--margin-default) * 1);
+	position: relative;
+	min-height: var(--height-default);
+	width: 100%;
+	}
+
+#authors .card {
+	border-radius: var(--border-radius-default);
+	padding: calc(var(--margin-elements) * 2);
+	margin-top: var(--margin-elements);
+	margin-right: var(--margin-elements);
+	background: var(--color-purple-gradient);
+	position: relative;
+	height: 100%;
+	}
+
+#authors .card:before {
+	position: absolute;
+	left: var(--margin-elements);
+	top: var(--margin-elements);
+	right: var(--margin-elements);
+	bottom: var(--margin-elements);
+	opacity: var(--opacity-light);
+	background: var(--color-embed);
+	content: ' ';
+	border-radius: var(--border-radius-default);
+	z-index: 1;
+	display: inline-block;
+	}
+
+#authors .card:nth-child(1n) {
+	float: left;
+	width: calc(50% - var(--margin-elements));
+	margin-right: var(--margin-elements);
+	}
+
+#authors .card:nth-child(2n) {
+	float: right;
+	margin-right: 0;
+	width: 50%;
+	}
+
+#authors .nickname, #authors .bio, #authors .links {
+	position: relative;
+	z-index: 2;
+	}
+
+#authors .nickname, #authors .bio {
+	width: 100%;
+	word-wrap: break-word;
+	word-break: break-word;
+	}
+
+#authors .links {
+	width: 100%;
+	display: inline-flex;
+	float: left;
+	text-align: center;
+	}
+
+#authors .links a {
+	float: left;
+	margin-top: var(--margin-elements);
+	padding: var(--margin-elements) 0;
+	width: 100%;
+	cursor: pointer;
+	-webkit-user-select: none;
+	transition: var(--transition-default);
+	text-decoration: none;
+	color: var(--color-text);
+	border-radius: var(--border-radius-default);
+	background: var(--color-light);
+	-webkit-user-drag: none;
+	}
+
+#authors .links a:hover {
+	background: var(--color-active);
+	}
+
+#authors .links a {
+	margin-left: var(--margin-elements);
+	}
+
+#authors .links a:first-child {
+	margin-left: 0;
+	}
+
+#authors .nickname {
+	font-size: var(--font-size-medium);
+	font-weight: bold;
 	}

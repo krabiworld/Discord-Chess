@@ -23,7 +23,15 @@ const LANGUAGES = [
 		language: 'Interface language',
 		important: 'Important',
 		notificationCookie: 'This website uses cookies to offer you the most up-to-date information. By accessing this site, you automatically agree to the processing of your cookies!',
-		copyright: 'All rights reserved'
+		copyright: 'All rights reserved',
+		bioOne: 'Owner, chess player (IM) and editor of rferl.org',
+		bioTwo: 'Programmer, designer, illustrator',
+		nickOne: 'u032',
+		nickTwo: 'MineEjo',
+		websiteLichess: 'Lichess',
+		websiteChess: 'Chess',
+		github: 'GitHub',
+		website: 'Website'
 	}
 	],
 	
@@ -41,7 +49,10 @@ const LANGUAGES = [
 		language: 'Käyttöliittymän kieli',
 		important: 'Tärkeä',
 		notificationCookie: 'Tämä verkkosivusto käyttää evästeitä, jotta voimme tarjota sinulle ajantasaisimmat tiedot. Käyttämällä tätä sivustoa hyväksyt automaattisesti evästeiden käsittelyn!',
-		copyright: 'Kaikki oikeudet pidätetään'
+		copyright: 'Kaikki oikeudet pidätetään',
+		bioOne: 'Omistaja, shakinpelaaja (IM) ja rferl.org-sivuston toimittaja.',
+		bioTwo: 'Ohjelmoija, suunnittelija, taiteilija',
+		website: 'Verkkosivusto'
 	}
 	],
 	/* Russian */
@@ -57,7 +68,10 @@ const LANGUAGES = [
 		language: 'Язык интерфейса',
 		important: 'Важно',
 		notificationCookie: 'Этот сайт использует файлы cookie, чтобы предложить вам самую актуальную информацию. Заходя на этот сайт, вы автоматически соглашаетесь на обработку файлов cookie!',
-		copyright: 'Все права защищены'
+		copyright: 'Все права защищены',
+		bioOne: 'Владелец, шахматист (IM) и редактор сайта rferl.org',
+		bioTwo: 'Программист, дизайнер, художник',
+		website: 'Веб-сайт'
 	}
 	]
 ];
