@@ -5,7 +5,8 @@ const LINKS = {
 };
 
 const LANGUAGES = [
-	/* Main */
+	/* The first basic */
+	/* English */
 	[
 		'English', 'en-US', {
 		name: 'Discord Chess',
@@ -22,7 +23,8 @@ const LANGUAGES = [
 	}
 	],
 	
-	/* Secondary */
+	/* The rest are secondary */
+	/* Finnish */
 	[
 		'Suomalainen', 'fi-FI', {
 		name: 'Discord Chess',
@@ -38,7 +40,7 @@ const LANGUAGES = [
 		copyright: 'Kaikki oikeudet pidätetään'
 	}
 	],
-	
+	/* Russian */
 	[
 		'Русский', 'ru-RU', {
 		name: 'Discord Chess',
