@@ -164,36 +164,36 @@
 	}
 
 #authors {
-	float: left;
-	display: inline-table;
-	top: calc(var(--margin-default) * 1);
 	position: relative;
-	min-height: var(--height-default);
+	top: calc(var(--margin-default) * 1);
+	display: inline-table;
+	float: left;
 	width: 100%;
+	min-height: var(--height-default);
 	}
 
 #authors .card {
-	border-radius: var(--border-radius-default);
-	padding: calc(var(--margin-elements) * 2);
-	margin-top: var(--margin-elements);
-	margin-right: var(--margin-elements);
-	background: var(--color-purple-gradient);
 	position: relative;
 	height: 100%;
+	margin-top: var(--margin-elements);
+	margin-right: var(--margin-elements);
+	padding: calc(var(--margin-elements) * 2);
+	border-radius: var(--border-radius-default);
+	background: var(--color-purple-gradient);
 	}
 
 #authors .card:before {
 	position: absolute;
-	left: var(--margin-elements);
+	z-index: 1;
 	top: var(--margin-elements);
 	right: var(--margin-elements);
 	bottom: var(--margin-elements);
-	opacity: var(--opacity-light);
-	background: var(--color-embed);
-	content: ' ';
-	border-radius: var(--border-radius-default);
-	z-index: 1;
+	left: var(--margin-elements);
 	display: inline-block;
+	content: ' ';
+	opacity: var(--opacity-light);
+	border-radius: var(--border-radius-default);
+	background: var(--color-embed);
 	}
 
 #authors .card:nth-child(1n) {
@@ -204,8 +204,8 @@
 
 #authors .card:nth-child(2n) {
 	float: right;
-	margin-right: 0;
 	width: 50%;
+	margin-right: 0;
 	}
 
 #authors .nickname, #authors .bio, #authors .links {
@@ -220,17 +220,17 @@
 	}
 
 #authors .links {
-	width: 100%;
 	display: inline-flex;
 	float: left;
+	width: 100%;
 	text-align: center;
 	}
 
 #authors .links a {
 	float: left;
+	width: 100%;
 	margin-top: var(--margin-elements);
 	padding: var(--margin-elements) 0;
-	width: 100%;
 	cursor: pointer;
 	-webkit-user-select: none;
 	transition: var(--transition-default);

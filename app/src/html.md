@@ -21,8 +21,6 @@
 
 ```html
 <!-- Figures Moves -->
-<div id='figures-moves-random'></div>
-...
-<script src='functions/random.js'></script>
-</body>
+<div id='figures-moves-random'></div>...
+<script src='functions/random.js'></script></body>
 ```
