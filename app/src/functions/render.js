@@ -1,4 +1,5 @@
 const sLocaleAttribute = 'localize';
+const sLinkAttribute = 'link';
 const sLangCookieKey = 'lang';
 const sClassLoaded = 'loaded';
 const sTranslationAttribute = 'translation';
@@ -55,11 +56,29 @@ window.addEventListener('load', () => {
 		if (_hLang.value) localise(_hLang.value);
 	}
 	
+	setLinks();
+	
 	/* Removing the overlay */
 	const _hOverlay = document.getElementById('overlay');
 	if (!_hOverlay.classList.contains(sClassLoaded)) _hOverlay.classList.add(sClassLoaded);
 	document.body.classList.add(sClassLoaded);
 });
+
+function setLinks() {
+	if (LINKS) {
+		const _allElements = document.getElementsByTagName('*');
+		
+		for (const _hElement of _allElements) {
+			if (_hElement.getAttribute(sLinkAttribute)) {
+				try {
+					_hElement.href = LINKS[_hElement.getAttribute(sLinkAttribute)];
+				} catch (_e) {
+					console.log(_e);
+				}
+			}
+		}
+	}
+}
 
 /* Localization function */
 function localise(_sLangCode) {
