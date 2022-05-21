@@ -1,6 +1,7 @@
 const sLocaleAttribute = 'localize';
 const sLangCookieKey = 'lang';
 const sClassLoaded = 'loaded';
+const sTranslationAttribute = 'translation';
 
 window.addEventListener('load', () => {
 	/* Writing a domain into the copyright */
@@ -88,8 +89,12 @@ function localise(_sLangCode) {
 		if (_sLocale) {
 			_hElement.innerHTML = _sLocale;
 		} else {
-			/* Installing the primary localization if no key is found in the secondary localization */
-			console.error(`Key "${_hElement.getAttribute(sLocaleAttribute)}" is not found in locale "${_sLangCode}"`);
+			/* Nicknames do not need to be translated, there is a separate attribute for this */
+			if (_hElement.getAttribute(sTranslationAttribute) !== 'false') {
+				/* Installing the primary localization if no key is found in the secondary localization */
+				console.error(`Key "${_hElement.getAttribute(sLocaleAttribute)}" is not found in locale "${_sLangCode}"`);
+			}
+			
 			_hElement.innerHTML = LANGUAGES[0][2][_hElement.getAttribute(sLocaleAttribute)];
 		}
 	}
