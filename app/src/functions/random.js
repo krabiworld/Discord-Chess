@@ -1,4 +1,5 @@
-const _aTimeRange = [1000, 3000]
+const aTimeRange = [1000, 3000]
+const sClassVisible = 'visible';
 
 window.addEventListener('load', () => {
 	const _hFiguresMoves = document.getElementById('figures-moves-random');
@@ -13,16 +14,19 @@ window.addEventListener('load', () => {
 			
 			if (_sRandomLetter && _sRandomNumber && _sRandomEmotion) {
 				_hFiguresMoves.innerHTML = `${_sRandomLetter}${_sRandomNumber}${_sRandomEmotion}`;
+				
+				if (!_hFiguresMoves.classList.contains(sClassVisible)) {
+					_hFiguresMoves.classList.add(sClassVisible);
+				}
 			}
 			
-			setTimeout(_generateMove, _getRandomIntInclusive(_aTimeRange[0], _aTimeRange[1]));
+			setTimeout(_generateMove, _getRandomIntInclusive(aTimeRange[0], aTimeRange[1]));
 		}
 		
 		function _getRandomIntInclusive(min, max) {
 			min = Math.ceil(min);
 			max = Math.floor(max);
-			return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is
-			                                                          // inclusive
+			return Math.floor(Math.random() * (max - min + 1) + min);
 		}
 	}
 });

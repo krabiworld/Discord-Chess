@@ -125,11 +125,16 @@
 	bottom: calc(var(--margin-elements) * 5);
 	height: var(--height-default);
 	padding: 0 var(--margin-elements);
-	opacity: var(--opacity-secondary);
 	color: var(--color-text);
 	border-radius: var(--border-radius-default);
 	background: var(--color-optional);
 	-webkit-user-drag: none;
+	opacity: 0;
+	transition: var(--transition-default);
+	}
+
+#figures-moves-random:is(.visible) {
+	opacity: var(--opacity-secondary);
 	}
 
 #chess-board {
