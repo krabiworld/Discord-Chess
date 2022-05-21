@@ -38,8 +38,7 @@ const LANGUAGES = [
 	/* The rest are secondary */
 	/* Finnish */
 	[
-		'Suomalainen', 'fi-FI', {
-		name: 'Discord Chess',
+		'Suomi', 'fi-FI', {
 		home: 'Etusivu',
 		donate: 'Lahjoita',
 		sourceCode: 'Lähdekoodi',
@@ -58,7 +57,6 @@ const LANGUAGES = [
 	/* Russian */
 	[
 		'Русский', 'ru-RU', {
-		name: 'Discord Chess',
 		home: 'Основная',
 		donate: 'Поддержка',
 		sourceCode: 'Исходный код',
@@ -71,6 +69,24 @@ const LANGUAGES = [
 		copyright: 'Все права защищены',
 		bioOne: 'Владелец, шахматист (IM) и редактор сайта rferl.org',
 		bioTwo: 'Программист, дизайнер, художник',
+		website: 'Веб-сайт'
+	}
+	],
+	/* Ukraine */
+	[
+		'Українська', 'uk-UA', {
+		home: 'Основний',
+		donate: 'Підтримка',
+		sourceCode: 'Вихідний код',
+		join: 'Увійти',
+		headline: 'УЯВІТЬ МІСЦЕ…',
+		subline: '…де ви можете стати членом міжнародного шахового співтовариства.',
+		language: 'Мова інтерфейсу',
+		important: 'Важливо',
+		notificationCookie: 'Цей сайт використовує файли cookie, щоб запропонувати вам найактуальнішу інформацію. Заходячи на цей сайт, Ви автоматично погоджуєтеся на обробку файлів cookie!',
+		copyright: 'Всі права захищені',
+		bioOne: 'Власник, шахіст (IM) і редактор сайту rferl.org',
+		bioTwo: 'Програміст, дизайнер, художник',
 		website: 'Веб-сайт'
 	}
 	]
