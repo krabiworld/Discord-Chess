@@ -1,3 +1,5 @@
+const _aTimeRange = [1000, 3000]
+
 window.addEventListener('load', () => {
 	const _hFiguresMoves = document.getElementById('figures-moves-random');
 	if (_hFiguresMoves && CHESS_BOARD) {
@@ -13,7 +15,7 @@ window.addEventListener('load', () => {
 				_hFiguresMoves.innerHTML = `${_sRandomLetter}${_sRandomNumber}${_sRandomEmotion}`;
 			}
 			
-			setTimeout(_generateMove, _getRandomIntInclusive(1000, 3000));
+			setTimeout(_generateMove, _getRandomIntInclusive(_aTimeRange[0], _aTimeRange[1]));
 		}
 		
 		function _getRandomIntInclusive(min, max) {
