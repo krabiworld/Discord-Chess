@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 	
 	/* Loading available languages */
 	const hLang = document.getElementById('language');
-	if (hLang) {
+	if (hLang && LANGUAGES) {
 		/*  Writing the selected language in cookies */
 		hLang.addEventListener('change', (_event) => {
 			document.cookie = `${sLangCookieKey}=${_event?.target?.value};`;
