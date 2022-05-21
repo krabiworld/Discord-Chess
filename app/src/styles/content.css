@@ -2,23 +2,23 @@
 	position: relative;
 	top: var(--margin-default);
 	right: 0;
-	left: 0;
-	height: calc(100% - var(--height-navbar) - var(--margin-default));
 	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	height: calc(100% - var(--height-navbar) - var(--margin-default));
 	padding: var(--border-radius-default);
+	transition: var(--transition-long);
+	text-align: center;
 	border-radius: var(--border-radius-default);
 	background: var(--color-purple-gradient);
-	text-align: center;
-	overflow: hidden;
-	transition: var(--transition-long);
 	}
 
 #content .text {
 	position: relative;
+	z-index: 5;
 	padding-top: 10%;
 	padding-bottom: 10%;
 	color: var(--color-text);
-	z-index: 5;
 	}
 
 #content .text .secondary {
@@ -39,15 +39,15 @@
 	}
 
 #content .text .button a {
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	border-radius: var(--border-radius-default);
 	padding: var(--margin-elements) calc(var(--width-default) * 2);
+	cursor: pointer;
+	-webkit-user-select: none;
+	transition: var(--transition-default);
 	text-decoration: none;
 	color: var(--color-text);
+	border-radius: var(--border-radius-default);
 	background: var(--color-light);
-	transition: var(--transition-default);
-	cursor: pointer;
+	-webkit-user-drag: none;
 	}
 
 #content .text .button a:hover {
@@ -56,26 +56,26 @@
 
 #content .overlay {
 	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: url('../assets/foam.png');
 	z-index: 4;
-	background-size: cover;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	opacity: 0.1;
+	background: url('../assets/foam.png');
+	background-size: cover;
 	}
 
 #environment {
-	background: var(--color-main-gradient);
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	overflow: hidden;
 	border-radius: var(--border-radius-default);
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 1;
+	background: var(--color-main-gradient);
 	}
 
 #environment svg {
@@ -83,26 +83,26 @@
 	}
 
 #env-chess svg {
-	-webkit-user-drag: none;
-	z-index: 1;
-	opacity: 1;
 	position: absolute;
+	z-index: 1;
 	right: calc(var(--margin-elements) * 2);
 	bottom: calc(var(--margin-elements) * 2);
 	width: var(--width-menu-left);
 	height: var(--width-menu-left);
+	opacity: 1;
+	-webkit-user-drag: none;
 	}
 
 #discord-widget {
+	position: absolute;
 	z-index: 4;
 	top: calc(var(--margin-elements) * 2);
-	transform: translate3d(-20px, -96px, 0);
-	opacity: 0.7;
-	height: calc(100% + var(--height-default) * 4);
-	width: calc(var(--width-menu-left) * 1.5 + var(--margin-elements) * 2);
-	position: absolute;
-	left: calc(var(--margin-elements) * 2);
 	right: 0;
 	bottom: 0;
+	left: calc(var(--margin-elements) * 2);
+	width: calc(var(--width-menu-left) * 1.5 + var(--margin-elements) * 2);
+	height: calc(100% + var(--height-default) * 4);
 	-webkit-user-select: none;
+	transform: translate3d(-20px, -96px, 0);
+	opacity: 0.7;
 	}

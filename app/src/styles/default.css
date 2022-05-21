@@ -56,20 +56,20 @@ body {
 	}
 
 select {
-	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
 	width: var(--width-input);
+	height: var(--height-default);
+	padding: var(--margin-elements);
+	cursor: pointer;
+	color: var(--color-text);
 	border: 0;
 	border-radius: var(--border-radius-default);
-	height: var(--height-default);
 	background: var(--color-active);
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
-	padding: var(--margin-elements);
-	color: var(--color-text);
-	font-family: 'Roboto', sans-serif;
 	}
 
-select:focus{
+select:focus {
 	outline: none;
 	}

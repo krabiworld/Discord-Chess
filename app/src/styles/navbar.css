@@ -31,14 +31,13 @@
 	background: var(--color-light);
 	}
 
-
 #navbar .tabs,
 #navbar .buttons {
-	transition: var(--transition-default);
 	line-height: calc(var(--height-navbar) - var(--margin-elements) * 2);
 	position: relative;
 	z-index: 1;
 	display: inline-flex;
+	transition: var(--transition-default);
 	}
 
 #navbar .tabs {
@@ -52,18 +51,18 @@
 #navbar .buttons a,
 #navbar .tabs a {
 	float: left;
+	min-width: calc(var(--width-default) * 2);
 	margin-left: var(--margin-elements);
 	padding: 0 var(--margin-elements);
 	cursor: pointer;
 	transition: var(--transition-default);
+	text-align: center;
 	text-decoration: none;
 	opacity: 0.8;
 	color: var(--color-text-secondary);
 	border-radius: var(--border-radius-default);
 	background: var(--color-light);
 	-webkit-user-drag: none;
-	min-width: calc(var(--width-default) * 2);
-	text-align: center;
 	}
 
 #navbar .buttons a:first-child,
@@ -85,8 +84,8 @@
 	}
 
 #navbar .buttons a {
-	background: var(--color-text);
 	color: var(--color-embed);
+	background: var(--color-text);
 	}
 
 #navbar .tabs .active {
