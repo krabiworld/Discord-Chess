@@ -1,5 +1,6 @@
 const sLocaleAttribute = 'localize';
 const sLangCookieKey = 'lang';
+const sClassLoaded = 'loaded'
 
 window.addEventListener('load', () => {
 	/* Writing a domain into the copyright */
@@ -52,6 +53,11 @@ window.addEventListener('load', () => {
 		
 		if (_hLang.value) localise(_hLang.value);
 	}
+	
+	/* Removing the overlay */
+	const _hOverlay = document.getElementById('overlay');
+	if (!_hOverlay.classList.contains(sClassLoaded)) _hOverlay.classList.add(sClassLoaded)
+	document.body.classList.add(sClassLoaded);
 });
 
 /* Localization function */

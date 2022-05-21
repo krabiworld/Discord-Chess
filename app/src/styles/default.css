@@ -45,10 +45,14 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: var(--font-size-default);
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	padding: var(--margin-default);
 	color: var(--color-text);
 	background: var(--color-embed);
+	}
+
+body:is(.loaded) {
+	overflow: auto;
 	}
 
 #redirect {
@@ -72,4 +76,50 @@ select {
 
 select:focus {
 	outline: none;
+	}
+
+
+#overlay {
+	transition: var(--transition-long);
+	opacity: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: var(--color-optional);
+	z-index: 999;
+	}
+
+#overlay:is(.loaded) {
+	opacity: 0;
+	z-index: -999;
+	display: inline-block;
+	}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+		}
+	50% {
+		transform: rotate(-180deg);
+		}
+	100% {
+		transform: rotate(-360deg);
+		}
+	}
+
+#overlay svg {
+	animation: rotate 4s infinite;
+	fill: var(--color-text);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: var(--width-default);
+	height: var(--height-default);
 	}
