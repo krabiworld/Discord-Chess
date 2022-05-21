@@ -9,9 +9,9 @@ window.addEventListener('load', () => {
 		
 		/* Chess move generation */
 		function _generateMove() {
-			const _sRandomLetter = CHESS_BOARD.LETTERS[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.LETTERS).length)];
-			const _sRandomNumber = CHESS_BOARD.NUMBERS[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.NUMBERS).length)];
-			const _sRandomEmotion = CHESS_BOARD.EMOTIONS[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.EMOTIONS).length)];
+			const _sRandomLetter = CHESS_BOARD.letters[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.letters).length)];
+			const _sRandomNumber = CHESS_BOARD.numbers[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.numbers).length)];
+			const _sRandomEmotion = CHESS_BOARD.emotions[getRandomIntInclusive(0, Object.keys(CHESS_BOARD.emotions).length)];
 			
 			if (_sRandomLetter && _sRandomNumber && _sRandomEmotion) {
 				_hFiguresMoves.innerHTML = `${_sRandomLetter}${_sRandomNumber}${_sRandomEmotion}`;

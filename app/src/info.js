@@ -1,7 +1,11 @@
 const LINKS = {
-	DONATE: 'https://nowpayments.io/donation/chesscord',
-	GITHUB: 'https://github.com/MineEjo/Discord-Chess',
-	DISCORD: 'https://discord.gg/ZHpdPgBb54'
+	donate: 'https://nowpayments.io/donation/chesscord',
+	github: 'https://github.com/MineEjo/Discord-Chess',
+	discord: 'https://discord.gg/ZHpdPgBb54',
+	oneLichess: 'https://lichess.org/@/u032nf',
+	oneChess: 'https://www.chess.com/member/untled032',
+	twoWebsite: '#', /* !TODO: Add link */
+	twoGitHub: 'https://github.com/MineEjo'
 };
 
 const LANGUAGES = [
@@ -59,9 +63,9 @@ const LANGUAGES = [
 ];
 
 const CHESS_BOARD = {
-	LETTERS: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
-	NUMBERS: ['1', '2', '3', '4', '5', '6', '7', '8'],
-	EMOTIONS: [
+	letters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+	numbers: ['1', '2', '3', '4', '5', '6', '7', '8'],
+	emotions: [
 		'?', '!!!', '!', ' :D', ' XD', ' >:)', ' :’-)', ' =)', ' :)', ' =3', ' :3', ' :P', ' :-/', ' :-|', ' ._.',
 		' -_-', ' (* ^ ω ^)', ' (o^▽^o)', ' (o･ω･o)', ' (^人^)', ' ( ´ ω )', ' ╰(▔∀▔)╯', ' (✯◡✯)', ' (o˘◡˘o)', ' *О*',
 		' *_*', ' о_О', ' :-E', ' :-<', ' :*)', ' [:]|||[:]', ' *:O)', ' (:\\/)', ' (MineEjo: **Keats**, stop what?!)',
