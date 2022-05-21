@@ -24,7 +24,7 @@ const LANGUAGES = [
 	
 	/* Secondary */
 	[
-		'Finnish', 'fi-FI', {
+		'Suomalainen', 'fi-FI', {
 		name: 'Discord Chess',
 		home: 'Etusivu',
 		donate: 'Lahjoita',
@@ -40,7 +40,7 @@ const LANGUAGES = [
 	],
 	
 	[
-		'Russian', 'ru-RU', {
+		'Русский', 'ru-RU', {
 		name: 'Discord Chess',
 		home: 'Основная',
 		donate: 'Поддержка',
