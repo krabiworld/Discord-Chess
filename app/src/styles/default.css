@@ -119,6 +119,6 @@ select:focus {
 	width: var(--width-default);
 	height: var(--height-default);
 	margin: auto;
-	animation: rotate 4s infinite;
+	animation: rotate var(--transition-animation) infinite;
 	fill: var(--color-text);
 	}

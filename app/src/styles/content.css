@@ -102,7 +102,7 @@
 	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
 	width: var(--width-default);
 	height: var(--height-default);
-	animation: moving 5s infinite;
+	animation: moving var(--transition-animation) infinite;
 	fill: var(--color-text);
 	}
 

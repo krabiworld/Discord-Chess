@@ -43,4 +43,5 @@
 	/* Transitions */
 	--transition-default: all 0.1s linear;
 	--transition-long: 0.5s ease;
+	--transition-animation: 4s;
 	}
