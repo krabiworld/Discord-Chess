@@ -25,6 +25,7 @@
 
 	/* Height */
 	--height-default: 34px;
+	--height-menu-top: 190px;
 	--height-navbar: calc(var(--height-default) + var(--margin-elements) * 2);
 	--height-footer: calc(var(--height-default) + var(--margin-elements) * 2);
 
@@ -39,6 +40,9 @@
 	--font-size-big: 56px;
 	--font-size-medium: 20px;
 	--font-size-default: 16px;
+
+	/* JavaScript */
+	--menu-hidden: false;
 
 	/* Transitions */
 	--transition-default: all 0.1s linear;

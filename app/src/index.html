@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+	<!-- !TODO: Add manifest -->
+	<!-- !TODO: Corrected SEO -->
+	<!-- !TODO: Add media board -->
 	<title>Discord Chess | International Chess Community</title>
 	<!-- Meta -->
 	<meta charset='UTF-8'>
@@ -14,9 +17,30 @@
 
 <div id='navbar'>
 	<div class='tabs'>
-		<a class='active' href='#' localize='home'></a>
-		<a href='pages/donate.html' localize='donate'></a>
-		<a href='pages/source-code.html' localize='sourceCode'></a>
+		
+		<div id='menu'>
+			<svg height='512' viewBox='0 0 512 512' width='512' x='0px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' y='0px'>
+					<!-- Main icon -->
+					<g id='icon-menu'>
+						<path d='M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z'/>
+						<path d='M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z'/>
+						<path d='M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z'/>
+					</g>
+				<!-- Second icon -->
+				<g class='hidden' id='icon-angle-small'>
+						<svg height='512' id='Bold' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg'>
+							<path d='M10.957,12.354a.5.5,0,0,1,0-.708l4.586-4.585a1.5,1.5,0,0,0-2.121-2.122L8.836,9.525a3.505,3.505,0,0,0,0,4.95l4.586,4.586a1.5,1.5,0,0,0,2.121-2.122Z'/>
+						</svg>
+					</g>
+				</svg>
+		</div>
+		
+		<div id='menu-links' class='links'>
+			<a class='active' href='#' localize='home'></a>
+			<a href='pages/donate.html' localize='donate'></a>
+			<a href='pages/source-code.html' localize='sourceCode'></a>
+			<iframe allowtransparency='true' frameborder='0' sandbox='allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts' src='https://discord.com/widget?id=972911293092753429&theme=dark'></iframe>
+		</div>
 	</div>
 	
 	<!-- Logo -->

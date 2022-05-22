@@ -2,6 +2,7 @@
 @import 'navbar.css';
 @import 'content.css';
 @import 'footer.css';
+@import 'adaptive.css';
 
 ::-webkit-scrollbar {
 	width: var(--margin-elements);

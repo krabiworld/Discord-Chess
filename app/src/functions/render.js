@@ -5,6 +5,33 @@ const sClassLoaded = 'loaded';
 const sTranslationAttribute = 'translation';
 
 window.addEventListener('load', () => {
+	const _hMenu = document.getElementById('menu');
+	const _hMenuLinks = document.getElementById('menu-links');
+	const _hIconMenu = document.getElementById('icon-menu');
+	const _hIconAngleSmall = document.getElementById('icon-angle-small')
+	
+	if (_hMenu && _hMenuLinks && _hIconMenu && _hIconAngleSmall) {
+		_hMenu.addEventListener('click', () => {
+			const _sVisibleStatus = getComputedStyle(document.documentElement).getPropertyValue('--menu-hidden');
+			
+			if (_sVisibleStatus) {
+				if (JSON.parse(_sVisibleStatus)) {
+					if (_hIconMenu.classList.contains('hidden')) {
+						_hIconAngleSmall.classList.add('hidden');
+						_hIconMenu.classList.remove('hidden');
+						
+						_hMenuLinks.classList.remove('adaptive')
+					} else {
+						_hIconMenu.classList.add('hidden');
+						_hIconAngleSmall.classList.remove('hidden');
+						
+						_hMenuLinks.classList.add('adaptive')
+					}
+				}
+			}
+		})
+	}
+	
 	/* Writing a domain into the copyright */
 	const _hDomain = document.getElementById('domain');
 	if (_hDomain) _hDomain.innerHTML = window.location.hostname;

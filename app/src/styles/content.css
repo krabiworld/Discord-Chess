@@ -155,6 +155,7 @@
 	top: calc(var(--margin-elements) * 2);
 	right: 0;
 	bottom: 0;
+	transition: var(--transition-long);
 	left: calc(var(--margin-elements) * 2);
 	width: calc(var(--width-menu-left) * 1.5 + var(--margin-elements) * 2);
 	height: calc(100% + var(--height-default) * 4);
@@ -173,6 +174,7 @@
 	}
 
 #authors .card {
+	transition: var(--transition-long);
 	position: relative;
 	height: 100%;
 	margin-top: var(--margin-elements);

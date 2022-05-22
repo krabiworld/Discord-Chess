@@ -1,0 +1,97 @@
+@supports (display: flex) {
+	@media screen and (max-width: 1520px) {
+		#discord-widget {
+			opacity: 0;
+			}
+		}
+
+	@media screen and (max-width: 1300px) {
+		#menu {
+			float: left;
+			width: var(--width-default);
+			height: calc(var(--height-default) - var(--margin-elements));
+			opacity: 1;
+			margin: calc(var(--margin-elements) / 2) var(--margin-elements) calc(var(--margin-elements) / 2) calc(var(--margin-elements) / 2);
+			}
+
+		#menu svg {
+			width: var(--width-default);
+			height: calc(var(--height-default) - var(--margin-elements));
+			fill: var(--color-text);
+			}
+
+		#navbar .links {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			}
+
+		#navbar .adaptive {
+			transition: var(--transition-long);
+			width: calc(100vw - var(--margin-elements) * 3 + 1px);
+			height: calc(100vh - (var(--height-default) + var(--margin-elements) * 5));
+			opacity: 1;
+			overflow: auto;
+			border-radius: var(--border-radius-default);
+			position: absolute;
+			top: calc(var(--height-default) + var(--margin-elements) * 2);
+			bottom: 0;
+			left: calc(var(--margin-elements) - var(--margin-elements) * 2);
+			right: 0;
+			background: var(--color-optional);
+			display: inline-block;
+			padding: var(--margin-elements);
+			}
+
+		#navbar .adaptive a {
+			text-align: left;
+			margin: calc(var(--margin-elements) / 3) 0;
+			width: 100%;
+			}
+
+		#navbar .adaptive a:first-child {
+			margin-top: 0;
+			}
+
+		#navbar .adaptive a:last-child {
+			margin-bottom: 0;
+			}
+
+		#navbar .adaptive .active {
+			background: var(--color-main);
+			}
+
+		#navbar .adaptive iframe {
+			margin-top: calc(var(--margin-elements) / 1.5);
+			border-radius: var(--border-radius-default);
+			width: 100%;
+			opacity: 1;
+			height: calc(var(--height-menu-top) * 1.5);
+			}
+
+		:root {
+			--menu-hidden: true;
+			}
+		}
+
+	@media screen and (max-width: 640px) {
+		#navbar .logo {
+			right: var(--margin-elements);
+			left: auto;
+			}
+
+		#navbar .buttons {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			}
+		}
+
+	@media screen and (max-width: 500px) {
+		#authors .card {
+			width: 100% !important;
+			}
+		}
+	}
