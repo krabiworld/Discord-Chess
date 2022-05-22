@@ -24,7 +24,7 @@ const LANGUAGES = [
 		important: 'Important',
 		notificationCookie: 'This website uses cookies to offer you the most up-to-date information. By accessing this site, you automatically agree to the processing of your cookies!',
 		copyright: 'All rights reserved',
-		bio1: 'Owner, chess player (IM) and editor of rferl.org',
+		bio1: 'Owner, admin, chess player (IM) and editor of rferl.org',
 		bio2: 'Programmer, designer, illustrator',
 		nick1: 'u032',
 		nick2: 'MineEjo',
@@ -49,7 +49,7 @@ const LANGUAGES = [
 		important: 'Tärkeä',
 		notificationCookie: 'Tämä verkkosivusto käyttää evästeitä, jotta voimme tarjota sinulle ajantasaisimmat tiedot. Käyttämällä tätä sivustoa hyväksyt automaattisesti evästeiden käsittelyn!',
 		copyright: 'Kaikki oikeudet pidätetään',
-		bioOne: 'Omistaja, shakinpelaaja (IM) ja rferl.org-sivuston toimittaja.',
+		bioOne: 'rferl.orgin omistaja, ylläpitäjä, shakinpelaaja (IM) ja päätoimittaja.',
 		bioTwo: 'Ohjelmoija, suunnittelija, taiteilija',
 		website: 'Verkkosivusto'
 	}
@@ -67,7 +67,7 @@ const LANGUAGES = [
 		important: 'Важно',
 		notificationCookie: 'Этот сайт использует файлы cookie, чтобы предложить вам самую актуальную информацию. Заходя на этот сайт, вы автоматически соглашаетесь на обработку файлов cookie!',
 		copyright: 'Все права защищены',
-		bioOne: 'Владелец, шахматист (IM) и редактор сайта rferl.org',
+		bioOne: 'Владелец, админ, шахматист (IM) и редактор сайта rferl.org',
 		bioTwo: 'Программист, дизайнер, художник',
 		website: 'Веб-сайт'
 	}
@@ -85,7 +85,7 @@ const LANGUAGES = [
 		important: 'Важливо',
 		notificationCookie: 'Цей сайт використовує файли cookie, щоб запропонувати вам найактуальнішу інформацію. Заходячи на цей сайт, ви автоматично погоджуєтеся на обробку файлів cookie!',
 		copyright: 'Всі права захищені',
-		bioOne: 'Власник, шахіст (IM) і редактор сайту rferl.org',
+		bioOne: 'Власник, адмін, шахіст (IM) і редактор сайту rferl.org',
 		bioTwo: 'Програміст, дизайнер, художник',
 		website: 'Веб-сайт'
 	}
