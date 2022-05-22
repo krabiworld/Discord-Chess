@@ -2,7 +2,7 @@ const LINKS = {
 	donate: 'https://nowpayments.io/donation/chesscord',
 	github: 'https://github.com/MineEjo/Discord-Chess',
 	discord: 'https://discord.gg/ZHpdPgBb54',
-	oneLichess: 'https://lichess.org/@/u032nf',
+	oneChess24: 'https://chess24.com/en/profile/u032nf',
 	oneChess: 'https://www.chess.com/member/untled032',
 	twoWebsite: '#', /* !TODO: Add link */
 	twoGitHub: 'https://github.com/MineEjo'
@@ -28,7 +28,7 @@ const LANGUAGES = [
 		bio2: 'Programmer, designer, illustrator',
 		nick1: 'u032',
 		nick2: 'MineEjo',
-		websiteLichess: 'Lichess',
+		websiteChess24: 'Chess24',
 		websiteChess: 'Chess',
 		github: 'GitHub',
 		website: 'Website'
