@@ -1,11 +1,11 @@
-<div align='center'>
+<div>
     <img alt='logo' src="https://github.com/MineEjo/Discord-Chess/blob/master/app/src/assets/chess-logo-min.png?raw=true"/>
 </div>
 
-# <center>Discord-Chess</center>
-<center>International Discord Chess Community.</center>
+# Discord-Chess
+- International Discord Chess Community.
 
-<p align="center">
+<p>
     <a href="https://discord.gg/ZHpdPgBb54"><img src="https://discordapp.com/api/guilds/972911293092753429/widget.png?style=banner2" alt="Discord server"></a>
 </p>
 
