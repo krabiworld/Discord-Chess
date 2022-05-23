@@ -106,7 +106,7 @@
 	@media screen and (max-width: 400px) {
 		#random-moves-figures {
 			right: calc(var(--margin-elements)) !important;
-			bottom: calc(var(--margin-elements) * 9) !important;
+			bottom: calc(var(--margin-elements) * 7) !important;
 			}
 
 		#content-block-1 #welcome {
@@ -114,13 +114,19 @@
 			}
 
 		#content-block-1 #welcome .button {
-			width: calc(100% - var(--margin-elements) * 2);
+			width: 100%;
 			display: inline-flex;
 			text-align: center;
 			}
 
 		#content-block-1 #welcome .button a {
 			width: 100%;
+			}
+		}
+
+	@media screen and (max-width: 330px) {
+		#content-block-1 .environment .animation {
+			opacity: 0;
 			}
 		}
 	}

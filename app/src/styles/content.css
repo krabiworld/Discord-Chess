@@ -78,6 +78,10 @@
 	background: var(--color-main-gradient);
 	}
 
+#content-block-1 .environment .animation {
+	transition: var(--transition-long);
+	}
+
 #content-block-1 .environment .animation svg:nth-of-type(1) {
 	position: absolute;
 	z-index: 1;
