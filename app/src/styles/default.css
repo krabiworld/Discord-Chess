@@ -141,3 +141,8 @@ select:focus {
 	animation: rotate var(--transition-animation) infinite;
 	fill: var(--color-text);
 	}
+
+iframe {
+	border: 0;
+	outline: 0;
+	}
