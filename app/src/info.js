@@ -27,7 +27,7 @@ const LANGUAGES = [
 		important: 'Important',
 		notificationCookie: 'This website uses cookies to offer you the most up-to-date information. By accessing this site, you automatically agree to the processing of your cookies!',
 		copyright: 'All rights reserved',
-		bio1: 'Owner, admin, chess player (IM) and editor of rferl.org',
+		bio1: 'Owner, Admin and Chessman (IM)',
 		bio2: 'Programmer, designer, illustrator',
 		nick1: 'u032',
 		nick2: 'MineEjo',
@@ -55,8 +55,8 @@ const LANGUAGES = [
 		important: 'Tärkeä',
 		notificationCookie: 'Tämä verkkosivusto käyttää evästeitä, jotta voimme tarjota sinulle ajantasaisimmat tiedot. Käyttämällä tätä sivustoa hyväksyt automaattisesti evästeiden käsittelyn!',
 		copyright: 'Kaikki oikeudet pidätetään',
-		bioOne: 'rferl.orgin omistaja, ylläpitäjä, shakinpelaaja (IM) ja päätoimittaja.',
-		bioTwo: 'Ohjelmoija, suunnittelija, taiteilija',
+		bio1: 'Omistaja, ylläpitäjä ja shakinpelaaja (IM)',
+		bio2: 'Ohjelmoija, suunnittelija, taiteilija',
 		website: 'Verkkosivusto'
 	}
 	],
@@ -76,8 +76,8 @@ const LANGUAGES = [
 		important: 'Важно',
 		notificationCookie: 'Этот сайт использует файлы cookie, чтобы предложить вам самую актуальную информацию. Заходя на этот сайт, вы автоматически соглашаетесь на обработку файлов cookie!',
 		copyright: 'Все права защищены',
-		bioOne: 'Владелец, админ, шахматист (IM) и редактор сайта rferl.org',
-		bioTwo: 'Программист, дизайнер, художник',
+		bio1: 'Владелец, админ и шахматист (IM)',
+		bio2: 'Программист, дизайнер, художник',
 		website: 'Веб-сайт'
 	}
 	],
@@ -97,8 +97,8 @@ const LANGUAGES = [
 		important: 'Важливо',
 		notificationCookie: 'Цей сайт використовує файли cookie, щоб запропонувати вам найактуальнішу інформацію. Заходячи на цей сайт, ви автоматично погоджуєтеся на обробку файлів cookie!',
 		copyright: 'Всі права захищені',
-		bioOne: 'Власник, адмін, шахіст (IM) і редактор сайту rferl.org',
-		bioTwo: 'Програміст, дизайнер, художник',
+		bio1: 'Власник, Адмін і шахіст (IM)',
+		bio2: 'Програміст, дизайнер, художник',
 		website: 'Веб-сайт'
 	}
 	]
