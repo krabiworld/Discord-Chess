@@ -19,6 +19,10 @@ header svg {
 	height: 0;
 	}
 
+#icon-nav-cross {
+	fill: var(--color-main);
+	}
+
 #nav-discord-widget {
 	width: 0;
 	height: 0;
@@ -35,6 +39,8 @@ header svg {
 	}
 
 #nav-menu .hidden {
+	height: 0;
+	font-size: 0;
 	transition: var(--transition-long);
 	opacity: 0;
 	}

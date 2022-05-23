@@ -13,10 +13,12 @@ window.addEventListener('load', () => {
 	/* Navbar menu */
 	const _hMenu = document.getElementById('nav-menu');
 	const _hMenuLinks = document.getElementById('nav-tabs-links');
+	const _hMenuSpan = document.getElementById('nav-menu-span');
+	const _hMenuSpanClose = document.getElementById('nav-menu-span-close');
 	const _hIconMenu = document.getElementById('icon-nav-menu');
-	const _hIconAngleSmall = document.getElementById('icon-nav-angle-small');
+	const _hIconAngleSmall = document.getElementById('icon-nav-cross');
 	
-	if (_hMenu && _hMenuLinks && _hIconMenu && _hIconAngleSmall) {
+	if (_hMenu && _hMenuLinks && _hIconMenu && _hMenuSpan && _hMenuSpanClose && _hIconAngleSmall) {
 		_hMenu.addEventListener('click', () => {
 			const _sVisibleStatus = getComputedStyle(document.documentElement).getPropertyValue('--tabs-hidden');
 			
@@ -26,10 +28,16 @@ window.addEventListener('load', () => {
 						_hIconAngleSmall.classList.add('hidden');
 						_hIconMenu.classList.remove('hidden');
 						
+						_hMenuSpan.classList.remove('hidden');
+						_hMenuSpanClose.classList.add('hidden');
+						
 						_hMenuLinks.classList.remove('adaptive');
 					} else {
 						_hIconMenu.classList.add('hidden');
 						_hIconAngleSmall.classList.remove('hidden');
+						
+						_hMenuSpan.classList.add('hidden');
+						_hMenuSpanClose.classList.remove('hidden');
 						
 						_hMenuLinks.classList.add('adaptive');
 					}

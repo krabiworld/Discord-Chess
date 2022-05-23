@@ -8,16 +8,35 @@
 	@media screen and (max-width: 1300px) {
 		#nav-menu {
 			float: left;
-			width: var(--width-default);
-			height: calc(var(--height-default) - var(--margin-elements));
+			width: 100%;
+			height: 100%;
 			opacity: 1;
-			margin: calc(var(--margin-elements) / 2) var(--margin-elements) calc(var(--margin-elements) / 2) calc(var(--margin-elements) / 2);
+			padding: calc(var(--margin-elements) / 2);
+			transition: var(--transition-default);
+			border-radius: var(--border-radius-default);
+			cursor: pointer;
+			}
+
+		#nav-menu:hover {
+			background: var(--color-active);
 			}
 
 		#nav-menu svg {
 			width: var(--width-default);
 			height: calc(var(--height-default) - var(--margin-elements));
 			fill: var(--color-text);
+			float: left;
+			}
+
+		#nav-menu span {
+			opacity: var(--opacity-special);
+			margin-left: var(--margin-elements);
+			line-height: calc(var(--height-default) - var(--margin-elements));
+			float: left;
+			}
+
+		#nav-menu svg:active {
+			fill: var(--color-main);
 			}
 
 		#nav-tabs-links {
