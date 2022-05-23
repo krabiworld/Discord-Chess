@@ -29,7 +29,8 @@
 
 		#nav-tabs-links:is(.adaptive) {
 			transition: var(--transition-long);
-			width: calc(100vw - var(--margin-elements) * 3 + 1px);
+			max-width: var(--width-min-display);
+			width: calc(100vw - var(--margin-elements) * 2);
 			height: calc(100vh - (var(--height-default) + var(--margin-elements) * 5));
 			opacity: 1;
 			overflow: auto;
