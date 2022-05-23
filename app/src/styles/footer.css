@@ -30,12 +30,15 @@ footer .title {
 footer .lang {
 	margin-top: calc(var(--margin-elements) / 2);
 	margin-right: var(--margin-elements);
+	display: inline-flex;
 	}
 
 footer .lang label {
-	padding: var(--margin-elements);
+	padding: var(--margin-elements) calc(var(--margin-elements) / 5);
 	border-radius: var(--border-radius-default);
 	background: var(--color-main);
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
 	}
 
 footer .interaction {
