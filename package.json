@@ -1,6 +1,6 @@
 {
 	"name": "discord-chess",
-	"version": "0.3.1",
+	"version": "1.0.0",
 	"description": "International Discord Chess Community",
 	"main": "app/express/main.js",
 	"scripts": {
