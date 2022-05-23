@@ -34,11 +34,12 @@ footer .lang {
 	}
 
 footer .lang label {
-	padding: var(--margin-elements) calc(var(--margin-elements) / 5);
+	padding: var(--margin-elements);
 	border-radius: var(--border-radius-default);
-	background: var(--color-main);
+	background: var(--color-embed);
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
+	color: var(--color-text-secondary);
 	}
 
 footer .interaction {
