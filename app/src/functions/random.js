@@ -2,7 +2,7 @@ const aTimeRange = [1000, 3000];
 const sClassVisible = 'visible';
 
 window.addEventListener('load', () => {
-	const _hFiguresMoves = document.getElementById('figures-moves-random');
+	const _hFiguresMoves = document.getElementById('random-moves-figures');
 	if (_hFiguresMoves && CHESS_BOARD) {
 		
 		_generateMove();

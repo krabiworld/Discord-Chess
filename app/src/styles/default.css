@@ -1,8 +1,38 @@
 @import 'variables.css';
-@import 'navbar.css';
+@import 'header.css';
 @import 'content.css';
 @import 'footer.css';
 @import 'adaptive.css';
+
+@keyframes moving {
+	0% {
+		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
+		width: var(--width-default);
+		height: var(--height-default);
+		}
+	50% {
+		right: calc(var(--width-menu-left) - var(--margin-elements) * 8);
+		width: calc(var(--width-default) * 1.2);
+		height: calc(var(--height-default) * 1.2);
+		}
+	100% {
+		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
+		width: var(--width-default);
+		height: var(--height-default);
+		}
+	}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+		}
+	50% {
+		transform: rotate(-180deg);
+		}
+	100% {
+		transform: rotate(-360deg);
+		}
+	}
 
 ::-webkit-scrollbar {
 	width: var(--margin-elements);
@@ -79,7 +109,7 @@ select:focus {
 	outline: none;
 	}
 
-#overlay {
+#load-overlay {
 	position: absolute;
 	z-index: 999;
 	top: 0;
@@ -93,25 +123,13 @@ select:focus {
 	background: var(--color-optional);
 	}
 
-#overlay:is(.loaded) {
+#load-overlay:is(.loaded) {
 	z-index: -999;
 	display: inline-block;
 	opacity: 0;
 	}
 
-@keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-		}
-	50% {
-		transform: rotate(-180deg);
-		}
-	100% {
-		transform: rotate(-360deg);
-		}
-	}
-
-#overlay svg {
+#load-overlay svg {
 	position: absolute;
 	top: 0;
 	right: 0;

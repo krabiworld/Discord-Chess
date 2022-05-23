@@ -1,12 +1,12 @@
 @supports (display: flex) {
 	@media screen and (max-width: 1520px) {
-		#discord-widget {
-			opacity: 0;
+		#content-discord-widget {
+			opacity: 0 !important;
 			}
 		}
 
 	@media screen and (max-width: 1300px) {
-		#menu {
+		#nav-menu {
 			float: left;
 			width: var(--width-default);
 			height: calc(var(--height-default) - var(--margin-elements));
@@ -14,20 +14,20 @@
 			margin: calc(var(--margin-elements) / 2) var(--margin-elements) calc(var(--margin-elements) / 2) calc(var(--margin-elements) / 2);
 			}
 
-		#menu svg {
+		#nav-menu svg {
 			width: var(--width-default);
 			height: calc(var(--height-default) - var(--margin-elements));
 			fill: var(--color-text);
 			}
 
-		#navbar .links {
+		#nav-tabs-links {
 			width: 0;
 			height: 0;
 			overflow: hidden;
 			opacity: 0;
 			}
 
-		#navbar .adaptive {
+		#nav-tabs-links:is(.adaptive) {
 			transition: var(--transition-long);
 			width: calc(100vw - var(--margin-elements) * 3 + 1px);
 			height: calc(100vh - (var(--height-default) + var(--margin-elements) * 5));
@@ -38,31 +38,30 @@
 			top: calc(var(--height-default) + var(--margin-elements) * 2);
 			bottom: 0;
 			left: calc(var(--margin-elements) - var(--margin-elements) * 2);
-			right: 0;
 			background: var(--color-optional);
 			display: inline-block;
 			padding: var(--margin-elements);
 			}
 
-		#navbar .adaptive a {
+		#nav-tabs-links:is(.adaptive) a {
 			text-align: left;
 			margin: calc(var(--margin-elements) / 3) 0;
 			width: 100%;
 			}
 
-		#navbar .adaptive a:first-child {
+		#nav-tabs-links:is(.adaptive) a:first-child {
 			margin-top: 0;
 			}
 
-		#navbar .adaptive a:last-child {
+		#nav-tabs-links:is(.adaptive) a:last-child {
 			margin-bottom: 0;
 			}
 
-		#navbar .adaptive .active {
+		#nav-tabs-links:is(.adaptive) .active {
 			background: var(--color-main);
 			}
 
-		#navbar .adaptive iframe {
+		#nav-discord-widget {
 			margin-top: calc(var(--margin-elements) / 1.5);
 			border-radius: var(--border-radius-default);
 			width: 100%;
@@ -71,17 +70,26 @@
 			}
 
 		:root {
-			--menu-hidden: true;
+			--tabs-hidden: true;
+			}
+		}
+
+	@media screen and (max-width: 1000px) {
+		#content-block-1 #welcome {
+			float: left;
+			text-align: left;
+			width: 60%;
+			margin: 0 var(--margin-elements);
 			}
 		}
 
 	@media screen and (max-width: 640px) {
-		#navbar .logo {
+		#nav-logo {
 			right: var(--margin-elements);
 			left: auto;
 			}
 
-		#navbar .buttons {
+		#nav-tabs-buttons {
 			width: 0;
 			height: 0;
 			overflow: hidden;
@@ -90,8 +98,29 @@
 		}
 
 	@media screen and (max-width: 500px) {
-		#authors .card {
+		#content-block-2 .card {
 			width: 100% !important;
+			}
+		}
+
+	@media screen and (max-width: 400px) {
+		#random-moves-figures {
+			right: calc(var(--margin-elements)) !important;
+			bottom: calc(var(--margin-elements) * 9) !important;
+			}
+
+		#content-block-1 #welcome {
+			width: calc(100% - var(--margin-elements) * 2);
+			}
+
+		#content-block-1 #welcome .button {
+			width: calc(100% - var(--margin-elements) * 2);
+			display: inline-flex;
+			text-align: center;
+			}
+
+		#content-block-1 #welcome .button a {
+			width: 100%;
 			}
 		}
 	}

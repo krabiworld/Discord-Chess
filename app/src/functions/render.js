@@ -3,16 +3,22 @@ const sLinkAttribute = 'link';
 const sLangCookieKey = 'lang';
 const sClassLoaded = 'loaded';
 const sTranslationAttribute = 'translation';
+const sFoundationYear = '2022';
 
 window.addEventListener('load', () => {
-	const _hMenu = document.getElementById('menu');
-	const _hMenuLinks = document.getElementById('menu-links');
-	const _hIconMenu = document.getElementById('icon-menu');
-	const _hIconAngleSmall = document.getElementById('icon-angle-small')
+	/* Copyright year */
+	const _hYear = document.getElementById('year');
+	if (_hYear) _hYear.innerHTML = (new Date().getFullYear().toString() === sFoundationYear) ? new Date().getFullYear().toString() : `${sFoundationYear} - ${new Date().getFullYear().toString()}`;
+	
+	/* Navbar menu */
+	const _hMenu = document.getElementById('nav-menu');
+	const _hMenuLinks = document.getElementById('nav-tabs-links');
+	const _hIconMenu = document.getElementById('icon-nav-menu');
+	const _hIconAngleSmall = document.getElementById('icon-nav-angle-small');
 	
 	if (_hMenu && _hMenuLinks && _hIconMenu && _hIconAngleSmall) {
 		_hMenu.addEventListener('click', () => {
-			const _sVisibleStatus = getComputedStyle(document.documentElement).getPropertyValue('--menu-hidden');
+			const _sVisibleStatus = getComputedStyle(document.documentElement).getPropertyValue('--tabs-hidden');
 			
 			if (_sVisibleStatus) {
 				if (JSON.parse(_sVisibleStatus)) {
@@ -20,16 +26,16 @@ window.addEventListener('load', () => {
 						_hIconAngleSmall.classList.add('hidden');
 						_hIconMenu.classList.remove('hidden');
 						
-						_hMenuLinks.classList.remove('adaptive')
+						_hMenuLinks.classList.remove('adaptive');
 					} else {
 						_hIconMenu.classList.add('hidden');
 						_hIconAngleSmall.classList.remove('hidden');
 						
-						_hMenuLinks.classList.add('adaptive')
+						_hMenuLinks.classList.add('adaptive');
 					}
 				}
 			}
-		})
+		});
 	}
 	
 	/* Writing a domain into the copyright */
@@ -85,8 +91,8 @@ window.addEventListener('load', () => {
 	
 	setLinks();
 	
-	/* Removing the overlay */
-	const _hOverlay = document.getElementById('overlay');
+	/* Removing the load-overlay */
+	const _hOverlay = document.getElementById('load-overlay');
 	if (!_hOverlay.classList.contains(sClassLoaded)) _hOverlay.classList.add(sClassLoaded);
 	document.body.classList.add(sClassLoaded);
 });

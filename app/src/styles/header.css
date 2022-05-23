@@ -1,63 +1,63 @@
-#navbar {
+header {
 	position: relative;
+	z-index: 10;
 	top: 0;
 	right: 0;
 	left: 0;
 	width: auto;
-	height: var(--height-navbar);
-	max-height: var(--height-navbar);
+	height: var(--height-header);
+	max-height: var(--height-header);
 	padding: var(--margin-elements);
 	-webkit-user-select: none;
 	transition: var(--transition-long);
 	border-radius: var(--border-radius-default);
 	background: var(--color-light);
-	z-index: 10;
 	}
 
-#navbar svg {
+header svg {
 	width: 0;
 	height: 0;
 	}
 
-#navbar iframe {
-	opacity: 0;
+#nav-discord-widget {
 	width: 0;
 	height: 0;
+	opacity: 0;
 	}
 
-#menu {
-	transition: var(--transition-long);
-	opacity: 0;
+#nav-menu {
 	width: 0;
 	height: 0;
 	margin: 0;
 	padding: 0;
-	}
-
-#menu .hidden {
 	transition: var(--transition-long);
 	opacity: 0;
 	}
 
-#navbar .tabs,
-#navbar .buttons {
-	line-height: calc(var(--height-navbar) - var(--margin-elements) * 2);
+#nav-menu .hidden {
+	transition: var(--transition-long);
+	opacity: 0;
+	}
+
+#nav-tabs,
+#nav-tabs-buttons {
+	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
 	position: relative;
 	z-index: 1;
 	display: inline-flex;
 	transition: var(--transition-default);
 	}
 
-#navbar .tabs {
+#nav-tabs {
 	float: left;
 	}
 
-#navbar .buttons {
+#nav-tabs-buttons {
 	float: right;
 	}
 
-#navbar .buttons a,
-#navbar .tabs a {
+#nav-tabs-buttons a,
+#nav-tabs a {
 	float: left;
 	min-width: calc(var(--width-default) * 2);
 	margin-left: var(--margin-elements);
@@ -73,36 +73,36 @@
 	-webkit-user-drag: none;
 	}
 
-#navbar .buttons a:first-child,
-#navbar .tabs a:first-child {
+#nav-tabs-buttons a:first-child,
+#nav-tabs a:first-child {
 	margin-left: 0;
 	}
 
-#navbar .buttons a:hover,
-#navbar .tabs a:hover {
+#nav-tabs-buttons a:hover,
+#nav-tabs a:hover {
 	opacity: 1;
 	}
 
-#navbar .buttons a:hover {
+#nav-tabs-buttons a:hover {
 	color: var(--color-main);
 	}
 
-#navbar .tabs a:hover {
+#nav-tabs a:hover {
 	background: var(--color-active);
 	}
 
-#navbar .buttons a {
+#nav-tabs-buttons a {
 	color: var(--color-embed);
 	background: var(--color-text);
 	}
 
-#navbar .tabs .active {
+#nav-tabs .active {
 	transition: var(--transition-default);
 	opacity: 1;
 	color: var(--color-text);
 	}
 
-#navbar .logo {
+#nav-logo {
 	font-size: var(--font-size-default);
 	position: absolute;
 	z-index: 0;
@@ -110,16 +110,16 @@
 	right: 0;
 	bottom: var(--margin-elements);
 	left: 0;
-	text-align: center;
 	transition: var(--transition-long);
+	text-align: center;
 	border-radius: var(--border-radius-default);
 	}
 
-#navbar .logo .content {
+#nav-logo div {
 	display: inline-block;
 	}
 
-#navbar .content svg {
+#nav-logo svg {
 	float: left;
 	width: var(--width-default);
 	height: calc(var(--height-default) - var(--margin-elements));
@@ -127,8 +127,8 @@
 	fill: var(--color-text);
 	}
 
-#navbar .content span {
-	line-height: calc(var(--height-navbar) - var(--margin-elements) * 2);
+#nav-logo span {
+	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
 	float: left;
 	padding-right: var(--margin-elements);
 	}

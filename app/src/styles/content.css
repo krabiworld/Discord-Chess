@@ -1,44 +1,44 @@
-#content {
+#content-block-1 {
 	position: relative;
 	top: var(--margin-default);
 	right: 0;
 	bottom: 0;
 	left: 0;
 	overflow: hidden;
-	height: calc(100% - var(--height-navbar) - var(--margin-default));
-	padding: var(--border-radius-default);
+	height: calc(100vh - var(--height-header) - var(--margin-default) * 3);
+	padding: var(--margin-elements);
 	transition: var(--transition-long);
 	text-align: center;
 	border-radius: var(--border-radius-default);
 	background: var(--color-purple-gradient);
 	}
 
-#content .text {
+#content-block-1 #welcome {
 	position: relative;
 	z-index: 5;
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 	color: var(--color-text);
 	}
 
-#content .text .secondary {
+#content-block-1 #welcome .secondary {
 	margin-top: var(--height-default);
 	}
 
-#content .title {
+#content-block-1 .title {
 	font-size: var(--font-size-big);
 	font-weight: bold;
 	}
 
-#content .desc {
+#content-block-1 .desc {
 	font-size: var(--font-size-medium);
 	}
 
-#content .text .button {
+#content-block-1 #welcome .button {
 	margin-top: calc(var(--height-default) * 1.5);
 	}
 
-#content .text .button a {
+#content-block-1 #welcome .button a {
 	padding: var(--margin-elements) calc(var(--width-default) * 2);
 	cursor: pointer;
 	-webkit-user-select: none;
@@ -50,11 +50,11 @@
 	-webkit-user-drag: none;
 	}
 
-#content .text .button a:hover {
+#content-block-1 #welcome .button a:hover {
 	background: var(--color-active);
 	}
 
-#content .overlay {
+#content-block-1 .overlay {
 	position: absolute;
 	z-index: 4;
 	top: 0;
@@ -66,7 +66,7 @@
 	background-size: cover;
 	}
 
-#environment {
+#content-block-1 .environment {
 	position: absolute;
 	z-index: 1;
 	top: 0;
@@ -78,25 +78,7 @@
 	background: var(--color-main-gradient);
 	}
 
-@keyframes moving {
-	0% {
-		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
-		width: var(--width-default);
-		height: var(--height-default);
-		}
-	50% {
-		right: calc(var(--width-menu-left) - var(--margin-elements) * 8);
-		width: calc(var(--width-default) * 1.2);
-		height: calc(var(--height-default) * 1.2);
-		}
-	100% {
-		right: calc(var(--width-menu-left) - var(--margin-elements) * 3.5);
-		width: var(--width-default);
-		height: var(--height-default);
-		}
-	}
-
-#env-chess svg:nth-of-type(1) {
+#content-block-1 .environment .animation svg:nth-of-type(1) {
 	position: absolute;
 	z-index: 1;
 	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
@@ -106,7 +88,7 @@
 	fill: var(--color-text);
 	}
 
-#env-chess svg:nth-of-type(2) {
+#content-block-1 .environment .animation svg:nth-of-type(2) {
 	position: absolute;
 	z-index: 1;
 	right: calc(var(--margin-elements) * 2);
@@ -116,27 +98,7 @@
 	fill: var(--color-text);
 	}
 
-#figures-moves-random {
-	line-height: var(--height-default);
-	position: absolute;
-	z-index: 1;
-	right: calc(var(--margin-elements) * 21);
-	bottom: calc(var(--margin-elements) * 4);
-	height: var(--height-default);
-	padding: 0 var(--margin-elements);
-	transition: var(--transition-default);
-	opacity: 0;
-	color: var(--color-text);
-	border-radius: var(--border-radius-default);
-	background: var(--color-optional);
-	-webkit-user-drag: none;
-	}
-
-#figures-moves-random:is(.visible) {
-	opacity: var(--opacity-light);
-	}
-
-#chess-board {
+#content-block-1 .environment .animation .line {
 	position: absolute;
 	z-index: 1;
 	right: var(--margin-elements);
@@ -149,22 +111,41 @@
 	-webkit-user-drag: none;
 	}
 
-#discord-widget {
+#content-block-1 #random-moves-figures {
+	line-height: var(--height-default);
+	position: absolute;
+	z-index: 1;
+	right: calc(var(--margin-elements) * 21);
+	bottom: calc(var(--margin-elements) * 4);
+	padding: 0 var(--margin-elements);
+	transition: var(--transition-default);
+	opacity: 0;
+	color: var(--color-text);
+	border-radius: var(--border-radius-default);
+	background: var(--color-optional);
+	-webkit-user-drag: none;
+	}
+
+#content-block-1 #random-moves-figures:is(.visible) {
+	opacity: var(--opacity-light);
+	}
+
+#content-block-1 #content-discord-widget {
 	position: absolute;
 	z-index: 4;
 	top: calc(var(--margin-elements) * 2);
 	right: 0;
 	bottom: 0;
-	transition: var(--transition-long);
 	left: calc(var(--margin-elements) * 2);
 	width: calc(var(--width-menu-left) * 1.5 + var(--margin-elements) * 2);
 	height: calc(100% + var(--height-default) * 4);
 	-webkit-user-select: none;
+	transition: var(--transition-long);
 	transform: translate3d(-20px, -96px, 0);
 	opacity: var(--opacity-special);
 	}
 
-#authors {
+#content-block-2 {
 	position: relative;
 	top: calc(var(--margin-default) * 1);
 	display: inline-table;
@@ -173,18 +154,18 @@
 	min-height: var(--height-default);
 	}
 
-#authors .card {
-	transition: var(--transition-long);
+#content-block-2 .card {
 	position: relative;
 	height: 100%;
 	margin-top: var(--margin-elements);
 	margin-right: var(--margin-elements);
 	padding: calc(var(--margin-elements) * 2);
+	transition: var(--transition-long);
 	border-radius: var(--border-radius-default);
 	background: var(--color-purple-gradient);
 	}
 
-#authors .card:before {
+#content-block-2 .card:before {
 	position: absolute;
 	z-index: 1;
 	top: var(--margin-elements);
@@ -198,37 +179,37 @@
 	background: var(--color-embed);
 	}
 
-#authors .card:nth-child(1n) {
+#content-block-2 .card:nth-child(1n) {
 	float: left;
 	width: calc(50% - var(--margin-elements));
 	margin-right: var(--margin-elements);
 	}
 
-#authors .card:nth-child(2n) {
+#content-block-2 .card:nth-child(2n) {
 	float: right;
 	width: 50%;
 	margin-right: 0;
 	}
 
-#authors .nickname, #authors .bio, #authors .links {
+#content-block-2 .nickname, #content-block-2 .bio, #content-block-2 .links {
 	position: relative;
 	z-index: 2;
 	}
 
-#authors .nickname, #authors .bio {
+#content-block-2 .nickname, #content-block-2 .bio {
 	width: 100%;
 	word-wrap: break-word;
 	word-break: break-word;
 	}
 
-#authors .links {
+#content-block-2 .links {
 	display: inline-flex;
 	float: left;
 	width: 100%;
 	text-align: center;
 	}
 
-#authors .links a {
+#content-block-2 .links a {
 	float: left;
 	width: 100%;
 	margin-top: var(--margin-elements);
@@ -243,19 +224,19 @@
 	-webkit-user-drag: none;
 	}
 
-#authors .links a:hover {
+#content-block-2 .links a:hover {
 	background: var(--color-active);
 	}
 
-#authors .links a {
+#content-block-2 .links a {
 	margin-left: var(--margin-elements);
 	}
 
-#authors .links a:first-child {
+#content-block-2 .links a:first-child {
 	margin-left: 0;
 	}
 
-#authors .nickname {
+#content-block-2 .nickname {
 	font-size: var(--font-size-medium);
 	font-weight: bold;
 	}
