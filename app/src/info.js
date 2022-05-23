@@ -14,6 +14,8 @@ const LANGUAGES = [
 	[
 		'English', 'en', {
 		name: 'Discord Chess',
+		menu: 'Menu',
+		menuClose: 'Close menu',
 		home: 'Home',
 		donate: 'Donate',
 		sourceCode: 'Source Code',
@@ -39,6 +41,8 @@ const LANGUAGES = [
 	/* Finnish */
 	[
 		'Suomi', 'fi', {
+		menu: 'Valikko',
+		menuClose: 'Sulje valikko',
 		home: 'Etusivu',
 		donate: 'Lahjoita',
 		sourceCode: 'Lähdekoodi',
@@ -57,6 +61,8 @@ const LANGUAGES = [
 	/* Russian */
 	[
 		'Русский', 'ru', {
+		menu: 'Меню',
+		menuClose: 'Закрыть меню',
 		home: 'Основная',
 		donate: 'Поддержка',
 		sourceCode: 'Исходный код',
@@ -75,6 +81,8 @@ const LANGUAGES = [
 	/* Ukraine */
 	[
 		'Українська', 'uk', {
+		menu: 'Меню',
+		menuClose: 'Закрити меню',
 		home: 'Основна',
 		donate: 'Підтримка',
 		sourceCode: 'Вихідний код',
