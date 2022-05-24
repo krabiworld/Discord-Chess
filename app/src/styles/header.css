@@ -84,7 +84,6 @@ header svg {
 #nav-tabs a {
 	float: left;
 	min-width: calc(var(--width-default) * 2);
-	margin-left: var(--margin-elements);
 	padding: 0 var(--margin-elements);
 	cursor: pointer;
 	transition: var(--transition-default);
@@ -95,11 +94,6 @@ header svg {
 	border-radius: var(--border-radius-default);
 	background: var(--color-light);
 	-webkit-user-drag: none;
-	}
-
-#nav-tabs-buttons a:first-child,
-#nav-tabs a:first-child {
-	margin-left: 0;
 	}
 
 #nav-tabs-buttons a:hover,
@@ -124,6 +118,7 @@ header svg {
 	transition: var(--transition-default);
 	opacity: 1;
 	color: var(--color-text);
+	text-decoration: underline;
 	}
 
 #nav-logo {

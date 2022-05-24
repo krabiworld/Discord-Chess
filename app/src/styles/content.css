@@ -168,37 +168,26 @@
 	}
 
 #content-block-2 {
+	padding: 0  var(--margin-elements)  var(--margin-elements) var(--margin-elements);
 	position: relative;
-	top: calc(var(--margin-default) * 1);
+	top: calc(var(--margin-default) * 2);
 	display: inline-table;
 	float: left;
+	border-radius: var(--border-radius-default);
 	width: 100%;
 	min-height: var(--height-default);
+	background: var(--color-light);
 	}
 
 #content-block-2 .card {
 	position: relative;
-	height: 100%;
 	margin-top: var(--margin-elements);
+	height: 100%;
 	margin-right: var(--margin-elements);
-	padding: calc(var(--margin-elements) * 2);
+	padding: calc(var(--margin-elements) * 1);
 	transition: var(--transition-long);
 	border-radius: var(--border-radius-default);
-	background: var(--color-purple-gradient);
-	}
-
-#content-block-2 .card:before {
-	position: absolute;
-	z-index: 1;
-	top: var(--margin-elements);
-	right: var(--margin-elements);
-	bottom: var(--margin-elements);
-	left: var(--margin-elements);
-	display: inline-block;
-	content: ' ';
-	opacity: var(--opacity-light);
-	border-radius: var(--border-radius-default);
-	background: var(--color-embed);
+	background: var(--color-active);
 	}
 
 #content-block-2 .card:nth-child(1n) {
@@ -221,41 +210,40 @@
 #content-block-2 .nickname, #content-block-2 .bio {
 	width: 100%;
 	word-wrap: break-word;
+	text-align: center;
 	word-break: break-word;
 	}
 
-#content-block-2 .links {
-	display: inline-flex;
-	float: left;
-	width: 100%;
-	text-align: center;
+#content-block-2 .bio {
+	opacity: var(--opacity-special);
 	}
 
-#content-block-2 .links a {
-	float: left;
-	width: 100%;
-	margin-top: var(--margin-elements);
-	padding: var(--margin-elements) 0;
+#content-block-2 a {
 	cursor: pointer;
 	-webkit-user-select: none;
 	transition: var(--transition-default);
+	font-size: var(--font-size-default);
+	font-weight: normal;
 	text-decoration: none;
-	color: var(--color-text);
+	color: var(--color-main);
 	border-radius: var(--border-radius-default);
-	background: var(--color-light);
 	-webkit-user-drag: none;
 	}
 
-#content-block-2 .links a:hover {
-	background: var(--color-active);
+#content-block-2 a:after {
+	content: ",";
 	}
 
-#content-block-2 .links a {
-	margin-left: var(--margin-elements);
+#content-block-2 a:last-child:after {
+	content: '';
 	}
 
-#content-block-2 .links a:first-child {
-	margin-left: 0;
+#content-block-2 a:nth-of-type(1):before {
+	content: '- ';
+	}
+
+#content-block-2 a:hover {
+	text-decoration: underline;
 	}
 
 #content-block-2 .nickname {

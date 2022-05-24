@@ -18,7 +18,7 @@
 
 footer {
 	position: relative;
-	top: calc(var(--margin-default) * 2);
+	top: calc(var(--margin-default) * 3);
 	right: 0;
 	bottom: 0;
 	left: 0;
