@@ -64,7 +64,7 @@ header svg {
 	}
 
 #nav-tabs,
-#nav-tabs-buttons {
+#nav-tabs-button {
 	line-height: calc(var(--height-header) - var(--margin-elements) * 2);
 	position: relative;
 	z-index: 1;
@@ -76,11 +76,11 @@ header svg {
 	float: left;
 	}
 
-#nav-tabs-buttons {
+#nav-tabs-button {
 	float: right;
 	}
 
-#nav-tabs-buttons a,
+#nav-tabs-button a,
 #nav-tabs a {
 	float: left;
 	min-width: calc(var(--width-default) * 2);
@@ -89,29 +89,28 @@ header svg {
 	transition: var(--transition-default);
 	text-align: center;
 	text-decoration: none;
-	opacity: 0.8;
 	color: var(--color-text-secondary);
 	border-radius: var(--border-radius-default);
 	background: var(--color-light);
 	-webkit-user-drag: none;
 	}
 
-#nav-tabs-buttons a:hover,
+#nav-tabs-button a:hover,
 #nav-tabs a:hover {
 	opacity: 1;
 	}
 
-#nav-tabs-buttons a:hover {
-	color: var(--color-main);
+#nav-tabs-button a:hover {
+	background: var(--color-main);
 	}
 
 #nav-tabs a:hover {
 	background: var(--color-active);
 	}
 
-#nav-tabs-buttons a {
-	color: var(--color-embed);
-	background: var(--color-text);
+#nav-tabs-button a {
+	color: var(--color-text);
+	background: var(--color-active);
 	}
 
 #nav-tabs .active {

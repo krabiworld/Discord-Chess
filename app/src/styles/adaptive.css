@@ -127,7 +127,7 @@
 			left: auto;
 			}
 
-		#nav-tabs-buttons {
+		#nav-tabs-button {
 			width: 0;
 			height: 0;
 			overflow: hidden;
@@ -159,12 +159,6 @@
 
 		#content-block-1 #welcome .button a {
 			width: 100%;
-			}
-		}
-
-	@media screen and (max-width: 330px) {
-		#content-block-1 .environment .animation {
-			opacity: 0;
 			}
 		}
 	}

@@ -42,7 +42,7 @@ footer .title {
 
 #notification-cookie,
 #copyright {
-	opacity: var(--opacity-secondary);
+	color: var(--color-text-secondary);
 	}
 
 footer .lang {
@@ -57,7 +57,11 @@ footer .lang label {
 	background: var(--color-embed);
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
-	color: var(--color-text-secondary);
+	color: var(--color-text);
+	}
+
+footer .lang label:after {
+	content: ':';
 	}
 
 footer .interaction {

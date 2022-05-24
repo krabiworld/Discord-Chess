@@ -34,13 +34,13 @@
 #content-block-1 #welcome {
 	position: relative;
 	z-index: 5;
-	padding-top: 15vh;
-	padding-bottom: 15vh;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 	color: var(--color-text);
 	}
 
 #content-block-1 #welcome .secondary {
-	margin-top: var(--height-default);
+	margin-top: var(--margin-elements);
 	}
 
 #content-block-1 .title {
@@ -53,7 +53,7 @@
 	}
 
 #content-block-1 #welcome .button {
-	margin-top: calc(var(--height-default) * 1.5);
+	margin-top: var(--height-default);
 	}
 
 #content-block-1 #welcome .button a {
@@ -94,62 +94,6 @@
 	overflow: hidden;
 	border-radius: var(--border-radius-default);
 	background: var(--color-main-gradient);
-	}
-
-#content-block-1 .environment .animation {
-	transition: var(--transition-long);
-	}
-
-#content-block-1 .environment .animation svg:nth-of-type(1) {
-	position: absolute;
-	z-index: 1;
-	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
-	width: var(--width-default);
-	height: var(--height-default);
-	animation: moving var(--transition-animation) infinite;
-	fill: var(--color-text);
-	}
-
-#content-block-1 .environment .animation svg:nth-of-type(2) {
-	position: absolute;
-	z-index: 1;
-	right: calc(var(--margin-elements) * 2);
-	bottom: calc(var(--margin-elements) + var(--height-default) / 2);
-	width: var(--width-default);
-	height: var(--height-default);
-	fill: var(--color-text);
-	}
-
-#content-block-1 .environment .animation .line {
-	position: absolute;
-	z-index: 1;
-	right: var(--margin-elements);
-	bottom: var(--margin-elements);
-	width: var(--width-menu-left);
-	height: calc(var(--height-default) / 2);
-	opacity: 1;
-	border-radius: var(--border-radius-default);
-	background: var(--color-text);
-	-webkit-user-drag: none;
-	}
-
-#content-block-1 #random-moves-figures {
-	line-height: var(--height-default);
-	position: absolute;
-	z-index: 1;
-	right: calc(var(--margin-elements) * 21);
-	bottom: calc(var(--margin-elements) * 4);
-	padding: 0 var(--margin-elements);
-	transition: var(--transition-default);
-	opacity: 0;
-	color: var(--color-text);
-	border-radius: var(--border-radius-default);
-	background: var(--color-optional);
-	-webkit-user-drag: none;
-	}
-
-#content-block-1 #random-moves-figures:is(.visible) {
-	opacity: var(--opacity-light);
 	}
 
 #content-block-1 #content-discord-widget {
@@ -215,7 +159,7 @@
 	}
 
 #content-block-2 .bio {
-	opacity: var(--opacity-special);
+	color: var(--color-text-secondary);
 	}
 
 #content-block-2 a {
