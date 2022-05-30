@@ -11,10 +11,17 @@
 		"url": "git+https://github.com/MineEjo/Discord-Chess.git"
 	},
 	"keywords": [
-		"!TODO"
+		"chess",
+		"web",
+		"community",
+		"website",
+		"discord",
+		"site",
+		"group",
+		"intertional"
 	],
-	"author": "!TODO",
-	"license": "!TODO",
+	"author": "MineEjo",
+	"license": "GPL-3.0",
 	"bugs": {
 		"url": "https://github.com/MineEjo/Discord-Chess/issues"
 	},

@@ -112,21 +112,21 @@
 	}
 
 #content-block-2 {
-	padding: 0  var(--margin-elements)  var(--margin-elements) var(--margin-elements);
 	position: relative;
 	top: calc(var(--margin-default) * 2);
 	display: inline-table;
 	float: left;
-	border-radius: var(--border-radius-default);
 	width: 100%;
 	min-height: var(--height-default);
+	padding: 0 var(--margin-elements) var(--margin-elements) var(--margin-elements);
+	border-radius: var(--border-radius-default);
 	background: var(--color-light);
 	}
 
 #content-block-2 .card {
 	position: relative;
-	margin-top: var(--margin-elements);
 	height: 100%;
+	margin-top: var(--margin-elements);
 	margin-right: var(--margin-elements);
 	padding: calc(var(--margin-elements) * 1);
 	transition: var(--transition-long);
@@ -153,8 +153,8 @@
 
 #content-block-2 .nickname, #content-block-2 .bio {
 	width: 100%;
-	word-wrap: break-word;
 	text-align: center;
+	word-wrap: break-word;
 	word-break: break-word;
 	}
 
@@ -163,11 +163,11 @@
 	}
 
 #content-block-2 a {
+	font-size: var(--font-size-default);
+	font-weight: normal;
 	cursor: pointer;
 	-webkit-user-select: none;
 	transition: var(--transition-default);
-	font-size: var(--font-size-default);
-	font-weight: normal;
 	text-decoration: none;
 	color: var(--color-main);
 	border-radius: var(--border-radius-default);
@@ -175,7 +175,7 @@
 	}
 
 #content-block-2 a:after {
-	content: ",";
+	content: ',';
 	}
 
 #content-block-2 a:last-child:after {

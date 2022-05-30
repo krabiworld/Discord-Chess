@@ -46,18 +46,18 @@ footer .title {
 	}
 
 footer .lang {
+	display: inline-flex;
 	margin-top: calc(var(--margin-elements) / 2);
 	margin-right: var(--margin-elements);
-	display: inline-flex;
 	}
 
 footer .lang label {
 	padding: var(--margin-elements);
-	border-radius: var(--border-radius-default);
-	background: var(--color-embed);
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
 	color: var(--color-text);
+	border-radius: var(--border-radius-default);
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background: var(--color-embed);
 	}
 
 footer .lang label:after {

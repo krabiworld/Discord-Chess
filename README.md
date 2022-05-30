@@ -3,6 +3,7 @@
 </div>
 
 # Discord-Chess
+
 - International Discord Chess Community.
 
 <p>
@@ -10,7 +11,9 @@
 </p>
 
 ## Important
+
 - `Nodejs` is only used for `Express`, according to the terms of the order.
 
 ## Licensing
+
 Licensed under the [GPL-3.0](https://github.com/MineEjo/Discord-Chess/blob/master/LICENSE).

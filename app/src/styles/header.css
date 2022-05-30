@@ -57,8 +57,8 @@ header svg {
 	}
 
 #nav-menu .hidden {
-	height: 0;
 	font-size: 0;
+	height: 0;
 	transition: var(--transition-long);
 	opacity: 0;
 	}
@@ -115,9 +115,9 @@ header svg {
 
 #nav-tabs .active {
 	transition: var(--transition-default);
+	text-decoration: underline;
 	opacity: 1;
 	color: var(--color-text);
-	text-decoration: underline;
 	}
 
 #nav-logo {
