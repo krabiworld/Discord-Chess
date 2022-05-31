@@ -17,11 +17,11 @@
  */
 
 const LINKS = {
-	donate: 'https://nowpayments.io/donation/chesscord',
+	donate: 'https://nowpayments.io/donation/u032ch',
 	github: 'https://github.com/MineEjo/Discord-Chess',
 	discord: 'https://discord.gg/ZHpdPgBb54',
-	oneChess24: 'https://chess24.com/en/profile/u032nf',
-	oneChess: 'https://www.chess.com/member/untled032',
+	oneChess24: 'https://chess24.com/en/profile/chesshedge',
+	oneChess: 'https://www.chess.com/member/chesshedgeh',
 	twoWebsite: '#', /* !TODO: Add link */
 	twoGitHub: 'https://github.com/MineEjo'
 };
